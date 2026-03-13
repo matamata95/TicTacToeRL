@@ -102,4 +102,3 @@ dependencies:
   - xorg-libxdmcp=1.1.5=hba3369d_1
   - zipp=3.23.0=pyhd8ed1ab_0
   - zstd=1.5.7=h534d264_6
-prefix: C:\Users\grulovicma\AppData\Local\miniconda3\envs\tictactoeRL
