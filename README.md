@@ -1,4 +1,4 @@
-*Overview*
+**Overview**
 This repository provdes:
 - a small RL environment implementation ticktoe_env.py
 - a Q-learning agent imeplementation agents/q_learning_agent.py
@@ -7,13 +7,13 @@ This repository provdes:
 
 Requirements are contained in requirements.yml and environment.yaml, python version = 3.9
 
-*Quick start*
+**Quick start**
 - train the agent to generate a q_table.pkl:
     python src/train.py
 - play against the trained agent:
     python src/play.py
 
-*Training options*
+**Training options**
 The training fucntion is defined as:
 train(episodes=2000, alpha=0.5, gamma=0.99, epsilon=0.1)
 
@@ -24,7 +24,7 @@ train(episodes=2000, alpha=0.5, gamma=0.99, epsilon=0.1)
 
 To change these parameters edit train.py.
 
-*Playing*
+**Playing**
 play.py loads q_table.pkl and runs a terminal game.
 - trained agent plays as player 1 (X)
 - human player plays as player 2 (O)
@@ -33,12 +33,12 @@ play.py loads q_table.pkl and runs a terminal game.
     3 4 5
     6 7 8
 
-*Environment API*
+**Environment API**
 - env.reset() - resets the board state and returns observation() - a list containing 9 elements that correspond the state of board cells. 
 - env.step(action) -  takes an action and returns next_observation, reward, done,info
 - env.available_actions() - list of legal playable moves, if a cell is taken, trying to input its corresponding integer results into an illegal move
 - env.render() - prints the board state
 - board encoding: 0 = empty, 1 = X (player 1), 2 = O (player 2)
 
-*Q-table*
+**Q-table**
 is a dict thats mapping integer state keys to arrays of 9 Q-values. State key encoding is a bse-3 encoding of the board (0/1/2 per cell)
